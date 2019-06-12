@@ -1,7 +1,6 @@
-import java.net.*;
-import java.io.*;
-//h
-/*import java.io.BufferedReader;
+//import java.net.*;
+//import java.io.*;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -10,20 +9,20 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-*/
-/*import org.json.simple.JSONArray;
+
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 
 import org.json.simple.parser.ParseException;
-*/ 
+
 public class JSON {
 
 	public static void main(String[] args) {
 
 		String url = "https://www.dati.gov.it/api/3/action/package_show?id=4754c863-f86f-47ae-b105-dc9963227c34";
-		//if(args.length == 1)
-		//	url = args[0]; //Url by args ;-)
+		if(args.length == 1)
+		url = args[0]; //Url by args ;-)
 		try {
 			
 			URLConnection openConnection = new URL(url).openConnection();
@@ -42,16 +41,11 @@ public class JSON {
 			   }
 			 } finally {
 			   in.close();
-			 }}
-			 catch (IOException e) {
-					e.printStackTrace();
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			
-	}
-}
-			/*JSONObject obj = (JSONObject) JSONValue.parseWithException(data); 
+			 }
+			 			
+	
+
+		JSONObject obj = (JSONObject) JSONValue.parseWithException(data); 
 			JSONObject objI = (JSONObject) (obj.get("result"));
 			JSONArray objA = (JSONArray) (objI.get("resources"));
 			
@@ -80,4 +74,3 @@ public class JSON {
 	    }
 	}
 }
-*/
