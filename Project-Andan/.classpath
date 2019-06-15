@@ -6,6 +6,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="C:/Users/Andrea/eclipse/java-2019-03/eclipse/librerie/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Andrea/eclipse/java-2019-03/eclipse/librerie/json-simple-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/danie/Desktop/UNIVPM/Programmazione a Oggetti/Progetto/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
