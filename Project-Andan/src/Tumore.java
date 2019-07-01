@@ -1,15 +1,15 @@
-import java.io.*;
+import java.io.Serializable;
 
 public class Tumore implements Serializable {
     private String periodo;
     private String territorio;
     private String patologia;
-    private int maschi;
-    private int femmine;
-	public Employee() {
+    private String maschi;
+    private String femmine;
+	public Tumore() {
 		// TODO Auto-generated constructor stub
 	}
-	public Tumore(String periodo, String territorio, String patologia, int maschi, int femmine) {
+	public Tumore(String periodo, String territorio, String patologia, String maschi, String femmine) {
 		// TODO Auto-generated constructor stub
 		this.periodo = periodo;
 		this.territorio = territorio;
@@ -36,20 +36,20 @@ public class Tumore implements Serializable {
 	public void setPatologia(String patologia) {
 		this.patologia = patologia;
 	}
-	public int getmaschi() {
+	public String getMaschi() {
 		return maschi;
 	}
-	public void setMaschi(int maschi) {
+	public void setMaschi(String maschi) {
 		this.maschi = maschi;
 	}
-	public int getFemmine() {
+	public String getFemmine() {
 		return femmine;
 	}
-	public void setFemmine(int femmine) {
+	public void setFemmine(String femmine) {
 		this.femmine = femmine;
 	}
 	@Override
 	public String toString() {
-		return "custom method toString for Employee [Periodo=" + periodo + ", Territorio=" + territorio + ",Patologia=" + patologia + ", Maschi=" + maschi + ", Femmine=" + femmine + "]";
+		return "[Periodo=" + periodo + ", Territorio=" + territorio + ",Patologia=" + patologia + ", Maschi=" + maschi + ", Femmine=" + femmine + "]";
 	}
 }

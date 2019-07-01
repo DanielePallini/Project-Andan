@@ -9,15 +9,15 @@ public class Serialization {
 	}
 
 	public static void main(String[] args) {
-		Tumore t = new Tumore("2011-2011", "081001", "Tumori maligni", 162 , 167);
+		Tumore t = new Tumore("2011-2011", "081001", "Tumori maligni", "162" , "167");
 /*
 		try {
-			FileOutputStream fileOut = new FileOutputStream("employee.ser");
+			FileOutputStream fileOut = new FileOutputStream("tumore.ser");
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
-			out.writeObject(e);
+			out.writeObject(t);
 			out.close();
 			fileOut.close();
-			System.out.printf("Serialized data is saved in employee.ser");
+			System.out.printf("Serialized data is saved in tumore.ser");
 		} catch (IOException i) {
 			i.printStackTrace();
 		}
@@ -43,10 +43,10 @@ public class Serialization {
 		try (BufferedReader br = new BufferedReader(new FileReader("t1.csv"))) {
 			String line;
 			while ((line = br.readLine()) != null) {
-				String[] values = line.split(COMMA_DELIMITER);
+				String[] values = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
 				System.out.println(values.length);
 				records.add(Arrays.asList(values));
-				v.add(new Tumore(values[0], values[1], values[2] , Integer.parseInt(values[3]), Integer.parseInt(values[4])));
+				v.add(new Tumore(values[0], values[1], values[2] , values[3], values[4]));
 			}
 			br.close();
 		} catch (IOException i) {
