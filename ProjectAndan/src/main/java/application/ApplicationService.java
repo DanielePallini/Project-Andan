@@ -32,14 +32,8 @@ public class ApplicationService {
 	}
 
 	public static Vector<Tumore> getList() {
-		tumori = Serialization.parser();
-		Gson json = new GsonBuilder().setPrettyPrinting().create();
-	    String response = json.toJson(tumori);
-	    System.out.println(response);
-		
 		
 		tumori = Serialization.parser();
-	
-	    	return tumori;
+		    	return tumori;
 	}
 }

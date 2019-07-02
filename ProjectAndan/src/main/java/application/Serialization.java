@@ -13,8 +13,6 @@ public class Serialization {
 	public static Vector<Tumore> parser() {
 		Tumore t = new Tumore("2011-2011", "081001", "Tumori maligni", 162 , 167);
    
-	
-		
 		try {
 			FileOutputStream fileOut = new FileOutputStream("tumore.ser");
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
@@ -58,9 +56,7 @@ public class Serialization {
 	//		return;
 		}
 
-	   
-	    
-	   return v;
+	     return v;
 	   
 	
 		
