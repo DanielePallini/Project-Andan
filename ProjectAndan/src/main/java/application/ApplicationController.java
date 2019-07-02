@@ -2,6 +2,7 @@ package application;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+import java.util.Vector;
 import java.util.concurrent.atomic.AtomicLong;
 import com.google.gson.Gson;
 
@@ -25,7 +26,7 @@ public class ApplicationController {
     private ApplicationService applicationService;
 	
 	@GetMapping("/data")
-    public List<Tumore> getAll() {
+    public Vector<Tumore> getAll() {
         return ApplicationService.getList();
 	}
 
