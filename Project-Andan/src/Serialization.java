@@ -5,15 +5,17 @@ public class Serialization {
 	final static String COMMA_DELIMITER = ",";
 
 	public Serialization() {
-		// TODO Auto-generated constructor stub
+		
 	}
+		
+	
 
 	public static void main(String[] args) {
 		Tumore t = new Tumore("2011-2011", "081001", "Tumori maligni", "162" , "167");
 /*
 		try {
 			FileOutputStream fileOut = new FileOutputStream("tumore.ser");
-			ObjectOutputStream out = new ObjectOutputStream(fileOut);
+00			ObjectOutputStream out = new ObjectOutputStream(fileOut);
 			out.writeObject(t);
 			out.close();
 			fileOut.close();
@@ -56,7 +58,7 @@ public class Serialization {
 		for(Tumore item: v) {		
 			System.out.println(v.toString());
 		}
-
+/*
 		List<List<String>> records2 = new ArrayList<>();
 		try (Scanner s = new Scanner(new File("t1.csv"));) {
 			while (s.hasNextLine()) {
@@ -79,5 +81,5 @@ public class Serialization {
 		}
 		return values;
 	}
-
+*/
 }

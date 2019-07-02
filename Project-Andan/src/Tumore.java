@@ -7,10 +7,10 @@ public class Tumore implements Serializable {
     private String maschi;
     private String femmine;
 	public Tumore() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	public Tumore(String periodo, String territorio, String patologia, String maschi, String femmine) {
-		// TODO Auto-generated constructor stub
+	
 		this.periodo = periodo;
 		this.territorio = territorio;
 		this.patologia = patologia;
@@ -50,6 +50,6 @@ public class Tumore implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "[Periodo=" + periodo + ", Territorio=" + territorio + ",Patologia=" + patologia + ", Maschi=" + maschi + ", Femmine=" + femmine + "]";
+		return "[Periodo=" + periodo + ", Territorio=" + territorio + ",Patologia=" + patologia + ", Maschi=" + maschi + ", Femmine=" + femmine + "]/n";
 	}
 }
