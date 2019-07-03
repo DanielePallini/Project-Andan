@@ -64,5 +64,17 @@ public class Serialization {
 	   return v;	   
 	}
 
+	public static Vector<Integer> getmaschi() {
+		Vector<Tumore> g = Serialization.data();
+	Vector<Integer> maschi = new Vector<Integer>();
+		for (Tumore item : g ) {
+			maschi.add(item.getMaschi()); 
+			}
+		return maschi;
 }
+		
+}
+	
+	
+
 

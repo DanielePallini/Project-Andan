@@ -29,19 +29,17 @@ public class ApplicationController {
     public Vector<Tumore> getAll() {
         return ApplicationService.getList();
 	}
-	@GetMapping("/metadata/")
+	@GetMapping("/metadata")
     public Vector<Metadata> getM() {
         return ApplicationService.getMeta();
+	}
+   
+	@GetMapping("/statsmaschi")
+	public Object maxmaschi() {
+		return Statistics.max();
 	}
 
 }
 
-/*
-	}
-	@GetMapping("/metadata/")
-	public List<Tumore> getMetadataForTumore(@PathVariable String studentId) {
-		return studentService.retrieveCourses(studentId);
-	}
-	*
-	*/
-	
+
+
