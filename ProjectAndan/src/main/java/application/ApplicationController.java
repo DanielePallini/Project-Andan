@@ -34,10 +34,10 @@ public class ApplicationController {
         return ApplicationService.getMeta();
 	}
    
-	@GetMapping("/statsmaschi")
-	public Object maxmaschi() {
-		return Statistics.max();
-	}
+	@GetMapping("/stats")
+    public Vector<Statistiche> statsmaschi() {
+        return ApplicationService.getStats();
+    }
 
 }
 

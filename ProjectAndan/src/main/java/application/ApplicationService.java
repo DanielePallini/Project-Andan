@@ -19,8 +19,9 @@ public class ApplicationService {
 
 	private static Vector<Tumore> tumori = new Vector<Tumore>();
 	private static Vector<Metadata> metadati = new Vector<Metadata>();
-
-	static {
+    private static Vector<Statistiche> statistiche = new Vector<Statistiche>();
+	
+    static {
 		//Initialize Data
 		Metadata m1 = new Metadata("periodo", "PERIODO", "String");
 		Metadata m2 = new Metadata("territorio", "TERRITORIO", "String");
@@ -45,4 +46,10 @@ public class ApplicationService {
 	    	return metadati;
 	}
 
+	public static Vector<Statistiche> getStats() {
+		Statistiche v1 = new Statistiche(Statistics.avg(), Statistics.min(), Statistics.max(), Statistics.somma())	; 	
+		statistiche.add(v1);
+		return statistiche;
+	}
+	
 }
