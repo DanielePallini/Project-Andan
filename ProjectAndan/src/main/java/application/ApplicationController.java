@@ -29,13 +29,14 @@ public class ApplicationController {
     public Vector<Tumore> getAll() {
         return ApplicationService.getList();
 	}
+	@GetMapping("/metadata/")
+    public Vector<Metadata> getM() {
+        return ApplicationService.getMeta();
+	}
 
 }
 
-/*	@GetMapping("/data")
-	public List<Tumore> getadataForTumore(@PathVariable String studentId) {
-		return ApplicationService.retrieveTumori(studentId);
-	
+/*
 	}
 	@GetMapping("/metadata/")
 	public List<Tumore> getMetadataForTumore(@PathVariable String studentId) {

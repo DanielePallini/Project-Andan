@@ -9,10 +9,10 @@ public class Tumore implements Serializable {
     private int maschi;
     private int femmine;
 	public Tumore() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	public Tumore(String periodo, String territorio, String patologia, int maschi, int femmine) {
-		// TODO Auto-generated constructor stub
+	
 		this.periodo = periodo;
 		this.territorio = territorio;
 		this.patologia = patologia;

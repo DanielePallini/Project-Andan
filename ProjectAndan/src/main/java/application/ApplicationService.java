@@ -18,22 +18,31 @@ import static java.lang.String.format;
 public class ApplicationService {
 
 	private static Vector<Tumore> tumori = new Vector<Tumore>();
+	private static Vector<Metadata> metadati = new Vector<Metadata>();
 
 	static {
 		//Initialize Data
-		Tumore t1 = new Tumore("2011-2011", "081001", "Tumori maligni", 162 , 167);
-	/*	Tumore t2 = new Course("Course2", "Spring MVC", "10 Examples",
-				Arrays.asList("Learn Maven", "Import Project", "First Example",
-						"Second Example"));
-		Tumore t3 = new Course("Course3", "Spring Boot", "6K Students",
-				Arrays.asList("Learn Maven", "Learn Spring",
-						"Learn Spring MVC", "First Example", "Second Example"));
-*/
+		Metadata m1 = new Metadata("periodo", "PERIODO", "String");
+		Metadata m2 = new Metadata("territorio", "TERRITORIO", "String");
+		Metadata m3 = new Metadata("patologia", "PATOLOGIA", "String");
+		Metadata m4 = new Metadata("maschi", "MASCHI", "Integer");
+		Metadata m5 = new Metadata("femmine", "FEMMINE", "Integer");
+
+		metadati.add(m1);
+		metadati.add(m2);
+		metadati.add(m3);
+		metadati.add(m4);
+		metadati.add(m5);
 	}
 
+
 	public static Vector<Tumore> getList() {
-		
-		tumori = Serialization.parser();
-		    	return tumori;
+		Serialization.parser();
+		tumori = Serialization.data();
+	    	return tumori;
 	}
+	public static Vector<Metadata> getMeta() {
+	    	return metadati;
+	}
+
 }
