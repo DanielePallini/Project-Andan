@@ -12,30 +12,22 @@ public class Statistics {
 		
 public static Vector<Integer> getVett(String field){
 	Vector<Tumore> g = Serialization.data();
-	
-	
 	switch (field) {
-	//case "periodo" :
-	//case "territori" : 2
-	//case "patologia" : 3 
+	
 	case  "maschi" : {Vector<Integer> v = new Vector<Integer>();
 	for (Tumore item : g ) {
 		v.add(item.getMaschi()); 
 		}
 	return v;
-	}
-	//case "femmine" : 5
-	
-	
-	}
-	return v;
-	
-	
-	
-	/*for (Tumore item : g ) {
-		maschi.add(item.getMaschi()); 
+	} 
+	case "femmine" : {Vector<Integer> v = new Vector<Integer>();
+	for (Tumore item : g ) {
+		v.add(item.getFemmine()); 
 		}
-	return maschi;*/
+	return v;
+	} 
+   }
+	return v;
 }
 		
 public static int somma (String field) {
@@ -56,8 +48,8 @@ public static float avg (String field) {
 }
 	
 public static Object max (String field) {
-	Vector<Integer> maschio = Statistics.getVett(field);
-	Object obj = Collections.max(maschio);
+	Vector<Integer> vett = Statistics.getVett(field);
+	Object obj = Collections.max(vett);
 	return obj;
 	}
 
@@ -83,13 +75,11 @@ public static double getStdDev(String field) {
 
 public static long getCount(String field) {
     Vector<Integer> vett = Statistics.getVett(field);
-    long total = vett.stream().distinct().count();
-    return total;
+    long count = vett.stream().distinct().count();
+    return count;
 }
 
 public static Vector<Statistiche> getStats(String field) {
-	
-	
 	Statistiche v1 = new Statistiche(field , Statistics.avg(field), Statistics.min(field), Statistics.max(field), Statistics.getStdDev(field),Statistics.somma(field), Statistics.getCount(field))	; 	
 	statistiche.add(v1);
 	return statistiche;
