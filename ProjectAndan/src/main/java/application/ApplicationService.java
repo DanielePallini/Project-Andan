@@ -21,6 +21,7 @@ public class ApplicationService {
 
 	private static Vector<Tumore> tumori = new Vector<Tumore>();
 	private static Vector<Metadata> metadati = new Vector<Metadata>();
+	private static Object obj = new Object();
 	
     static {
 		//Initialize Data
@@ -49,12 +50,38 @@ public class ApplicationService {
 	    	return metadati;
 	}
 	
-	public static Vector<Statistiche> getStats(String field) {
-	  
-	    	return StatisticsInt.getStats(field);
-
+	public static Object getStat(String field) {
+	   	 switch (field) {
+      	 case "maschi" :	{Object obj = new Object () ;
+      		                 obj = StatisticsInt.getStats(field);
+      	  		                        return obj;
+      	  		                        }
+      	 case "femmine" : {Object obj = new Object () ;
+           obj = StatisticsInt.getStats(field);
+               return obj;
+               }
+      	 
+      	 case "periodo" : {Object obj = new Object () ;
+      		 
+      		 obj=StatisticsString.countOccurrence(field);
+      		 return obj;}
+      	 case "patologia" : {Object obj = new Object () ;
+  		 
+  		 obj=StatisticsString.countOccurrence(field);
+  		 return obj;}
+      	 case "territorio" : {Object obj = new Object () ;
+  		 
+  		 obj=StatisticsString.countOccurrence(field);
+  		 return obj;}
+     }
+	
+        return obj;
+        }
+	    	//return StatisticsInt.getStats(field);
+	    	//return StatisticsString.countOccurrence(field);
 }
-	public static Map<String, Integer> getCount(String field) {
+	/*public static Map<String, Integer> getCount(String field) {
 		  
     	return StatisticsString.countOccurrence(field)	;
-}}
+}*/
+	

@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ApplicationController {
-	private static Object obj = new Object();
+	
 	
 	@ResponseBody
 	@ExceptionHandler(MissingServletRequestParameterException.class)
@@ -50,35 +50,9 @@ public class ApplicationController {
 	@GetMapping("/stats")
 
     public Object statsInt(@RequestParam String field) {
-         	 switch (field) {
-          	 case "maschi" :	{Object obj = new Object () ;
-          		                 obj = ApplicationService.getStats(field);
-          	  		                        return obj;
-          	  		                        }
-          	 case "femmine" : {Object obj = new Object () ;
-               obj = ApplicationService.getStats(field);
-                   return obj;
-                   }
-          	 
-          	 case "periodo" : {Object obj = new Object () ;
-          		 
-          		 obj=ApplicationService.getCount(field);
-          		 return obj;}
-          	 case "patologia" : {Object obj = new Object () ;
-      		 
-      		 obj=ApplicationService.getCount(field);
-      		 return obj;}
-          	 case "territorio" : {Object obj = new Object () ;
-      		 
-      		 obj=ApplicationService.getCount(field);
-      		 return obj;}
-         }
-		
-	        return obj;
-	        }
-	
-
+           return ApplicationService.getStat(field)   ;  
 }
+	}
 
 
 
