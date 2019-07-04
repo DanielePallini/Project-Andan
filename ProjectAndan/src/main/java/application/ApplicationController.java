@@ -36,7 +36,7 @@ public class ApplicationController {
    
 	@GetMapping("/stats")
     public Vector<Statistiche> statsmaschi() {
-        return ApplicationService.getStats();
+        return Statistics.StatsMaschi();
     }
 
 }
