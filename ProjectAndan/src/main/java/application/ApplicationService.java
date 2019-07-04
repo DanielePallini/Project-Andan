@@ -2,6 +2,7 @@ package application;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Vector;
@@ -72,7 +73,9 @@ public class ApplicationService {
       	 case "territorio" : {Object obj = new Object () ;
   		 
   		 obj=StatisticsString.countOccurrence(field);
-  		 return obj;}
+  		 return obj;
+  		 }
+      	 default: obj=new HashMap(){{ put("result", "failed"); put("type", "error");}};
      }
 	
         return obj;
@@ -84,4 +87,3 @@ public class ApplicationService {
 		  
     	return StatisticsString.countOccurrence(field)	;
 }*/
-	
