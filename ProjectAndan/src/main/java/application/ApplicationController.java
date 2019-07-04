@@ -31,7 +31,7 @@ public class ApplicationController {
 	@ExceptionHandler(MissingServletRequestParameterException.class)
 	public Object missingParamterHandler(Exception exception) {
 	    // exception handle while specified arguments are not available requested service only. it handle when request is as api json service       
-	    return  new HashMap() {{ put("result", "failed"); put("type", "FRONTONI");}};
+	    return  new HashMap() {{ put("result", "failed"); put("type", "error");}};
 	} 
 	
 	
