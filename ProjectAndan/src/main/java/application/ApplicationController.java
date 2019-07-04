@@ -35,8 +35,9 @@ public class ApplicationController {
 	}
    
 	@GetMapping("/stats")
-    public Vector<Statistiche> statsmaschi() {
-        return Statistics.StatsMaschi();
+    public Vector<Statistiche> stats(@RequestParam String field) {
+       
+		return Statistics.getStats(field);
     }
 
 }
