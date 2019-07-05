@@ -81,15 +81,12 @@ public class ApplicationService {
 	
         return obj;
         }
-	/*public static Object filterField(String fieldName, String operator, Object value) {
-		
-		
-		
-		
-		return (Object) utils.select(this.getPeople(), fieldName, operator, value);
-	}*/
 	
-	
+	public static Vector<Tumore> dataFiltered(String field , String operator , int value) {
+		
+		tumori = FilterUtils.selectData(field, operator, value) ;
+	    	return tumori;
+	}
 	    	
 }
 	

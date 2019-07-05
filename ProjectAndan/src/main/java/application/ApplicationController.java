@@ -35,6 +35,10 @@ public class ApplicationController {
     public Vector<Tumore> getAll() {
         return ApplicationService.getList();
 	}
+	@RequestMapping(value = "/data/{field}/{operator}/{value}" , method=RequestMethod.GET)
+    public Vector<Tumore> filtriData(@PathVariable String field,@PathVariable String operator,@PathVariable int value) {
+        return ApplicationService.dataFiltered(field,operator,value);
+	}
 	
 	@GetMapping("/metadata")
     public Vector<Metadata> getM() {
