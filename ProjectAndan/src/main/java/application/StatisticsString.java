@@ -14,8 +14,12 @@ public class StatisticsString {
 	private static Vector<String> v = new Vector<String>();
 	// private static Vector<StatisticheString> statistiche = new Vector<StatisticheString>();
 	
-	public static Vector<String> getVett(String field){
+	public static Vector<String> getVett(String field, String operator, Object value){
 		Vector<Tumore> g = Serialization.data();
+		if (operator != "0") {
+			Vector<String> v = filterField(field,operator,value);
+			return v;
+		}
 		switch (field) {
 		
 		case  "periodo" : {Vector<String> v = new Vector<String>();
@@ -40,8 +44,8 @@ public class StatisticsString {
 		return v;
 	}
 	
-public static Map<String, Integer> countOccurrence(String field) {
-		Vector<String> vett = getVett(field);
+public static Map<String, Integer> countOccurrence(String field, String operator, Object value) {
+		Vector<String> vett = getVett(field,operator,value);
 		Map<String,Integer> hm = new HashMap();
 
     for(String item: vett){
@@ -53,5 +57,9 @@ public static Map<String, Integer> countOccurrence(String field) {
         }
     }
    return hm;
+	}
+public static Vector<String> filterField(String field, String operator, Object value) {
+	
+	return FilterUtils.selectString(field, operator, value);
 }
 }

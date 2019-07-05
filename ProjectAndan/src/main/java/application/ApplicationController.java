@@ -26,14 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApplicationController {
 	
-	
-	@ResponseBody
-	@ExceptionHandler(MissingServletRequestParameterException.class)
-	public Object missingParamterHandler(Exception exception) {
-	    // exception handle while specified arguments are not available requested service only. it handle when request is as api json service       
-	    return  new HashMap() {{ put("result", "failed"); put("type", "error");}};
-	} 
-	
+	private static Object objs = new Object();
 	
 	@Autowired
     private ApplicationService applicationService;
@@ -42,17 +35,36 @@ public class ApplicationController {
     public Vector<Tumore> getAll() {
         return ApplicationService.getList();
 	}
+	
 	@GetMapping("/metadata")
     public Vector<Metadata> getM() {
         return ApplicationService.getMeta();
 	}
    
 	@GetMapping("/stats")
-
-    public Object statsInt(@RequestParam String field) {
-           return ApplicationService.getStat(field)   ;  
+    public Object stats(@RequestParam String field) {
+           return ApplicationService.getStat(field,"0",0)   ;  
 }
-	}
+	/*@GetMapping ("/stats")
+	public Object filtri (@RequestParam String fieldName, String operator, Object value) {
+		return ApplicationService.filterField(fieldName, operator, value);
+		}*/ 
+	
+	@RequestMapping(value= "/stats/{field}/{operator}/{value}", method=RequestMethod.GET)
+	public Object filtri(@PathVariable String field,@PathVariable String operator,@PathVariable int value ){
+		  
+		//if (field=="maschi" ) {
+		//values= Integer.parseInt(value)	;
+	
+		return ApplicationService.getStat(field,operator,value);
+		}
+		
+	
+		
+	
+
+	
+}
 
 
 

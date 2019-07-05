@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+
+
 import java.util.List;
 
 import static java.lang.String.format;
@@ -51,39 +53,44 @@ public class ApplicationService {
 	    	return metadati;
 	}
 	
-	public static Object getStat(String field) {
+	public static Object getStat(String field, String operator, Object value) {
 	   	 switch (field) {
       	 case "maschi" :	{Object obj = new Object () ;
-      		                 obj = StatisticsInt.getStats(field);
+      		                 obj = StatisticsInt.getStats(field,operator,value);
       	  		                        return obj;
       	  		                        }
       	 case "femmine" : {Object obj = new Object () ;
-           obj = StatisticsInt.getStats(field);
+           obj = StatisticsInt.getStats(field,operator,value);
                return obj;
                }
       	 
       	 case "periodo" : {Object obj = new Object () ;
       		 
-      		 obj=StatisticsString.countOccurrence(field);
+      		 obj=StatisticsString.countOccurrence(field,operator,value);
       		 return obj;}
       	 case "patologia" : {Object obj = new Object () ;
   		 
-  		 obj=StatisticsString.countOccurrence(field);
+  		 obj=StatisticsString.countOccurrence(field,operator,value);
   		 return obj;}
       	 case "territorio" : {Object obj = new Object () ;
   		 
-  		 obj=StatisticsString.countOccurrence(field);
-  		 return obj;
-  		 }
-      	 default: obj=new HashMap(){{ put("result", "failed"); put("type", "error");}};
+  		 obj=StatisticsString.countOccurrence(field,operator,value);
+  		 return obj;}
+      	 default: obj=new HashMap(){{ put("type", "Campo inesistente"); put("result", "ERRORE");}};
      }
 	
         return obj;
         }
-	    	//return StatisticsInt.getStats(field);
-	    	//return StatisticsString.countOccurrence(field);
+	/*public static Object filterField(String fieldName, String operator, Object value) {
+		
+		
+		
+		
+		return (Object) utils.select(this.getPeople(), fieldName, operator, value);
+	}*/
+	
+	
+	    	
 }
-	/*public static Map<String, Integer> getCount(String field) {
-		  
-    	return StatisticsString.countOccurrence(field)	;
-}*/
+	
+	

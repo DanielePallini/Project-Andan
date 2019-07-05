@@ -9,12 +9,14 @@ public class Statistiche implements Serializable {
     private Object max;
     public double devstd;
     private int sum;
+    private long count;
    
  
-	public Statistiche() {
-		}
 	
-	public Statistiche(String field, float avg, Object min, Object max, double devstd, int sum ) {
+	//public Statistiche() {
+		//}
+	
+	public Statistiche(String field, float avg, Object min, Object max, double devstd, int sum, long count ) {
 		
 		this.field = field ;
 		this.avg = avg;
@@ -22,10 +24,18 @@ public class Statistiche implements Serializable {
 		this.max = max;
         this.devstd= devstd;
 		this.sum = sum;
+		this.count= count;
 		
 	}
 	
-	
+	public long getCount() {
+		return count;
+	}
+
+	public void setCount(long count) {
+		this.count = count;
+	}
+
 	public double getAvg() {
 		return avg;
 	}
@@ -66,4 +76,4 @@ public class Statistiche implements Serializable {
 		this.field = field;
 	}
 
-	 }
+}
