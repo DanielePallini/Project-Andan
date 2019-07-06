@@ -9,6 +9,8 @@ import java.util.Vector;
 
 
 public class FilterUtils {
+	
+	
 	public static boolean check(Object value, String operator, Object th) {
 		if (th instanceof Number && value instanceof Number) {	
 			Double thC = ((Number)th).doubleValue();
@@ -23,6 +25,12 @@ public class FilterUtils {
 			return value.equals(th);
 		return false;		
 	}
+	
+	public static boolean checkNot(Object value, String operator, Object th) {
+		if ((th instanceof Number && value instanceof Number) || (th instanceof String && value instanceof String)) {	
+					return !(value.equals(th));}
+				return false;		
+				}
 	
 	public static Vector<Integer> select(String fieldName, String operator, Object value) {
 		Vector<Integer> src= StatisticsInt.getVett(fieldName, "0", 0);
@@ -56,11 +64,40 @@ public class FilterUtils {
 		}
 			//return out;
 	}
-		return out;
+				return out;
 	}
 	public static Vector<Tumore> selectData(String fieldName, String operator, Object value) {
 		Vector<Tumore> src= Serialization.data();
 		Vector<Tumore> out = new Vector<Tumore>();
+		if (operator.equals("not")) {
+			for(Tumore item:src) {
+			try {
+				Method m = item.getClass().getMethod("get"+fieldName.substring(0, 1).toUpperCase()+fieldName.substring(1),null);
+				try {
+					Object tmp = m.invoke(item);
+					if(FilterUtils.checkNot(tmp, operator, value))
+						out.add(item);
+				} catch (IllegalAccessException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IllegalArgumentException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (InvocationTargetException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} catch (NoSuchMethodException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SecurityException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}					
+		}
+		return out;
+	} else {
+		
 		for(Tumore item:src) {
 			try {
 				Method m = item.getClass().getMethod("get"+fieldName.substring(0, 1).toUpperCase()+fieldName.substring(1),null);
@@ -86,6 +123,6 @@ public class FilterUtils {
 				e.printStackTrace();
 			}					
 		}
-		return out;
+		return out;}
 	}
 }
