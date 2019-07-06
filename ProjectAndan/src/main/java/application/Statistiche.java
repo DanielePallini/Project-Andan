@@ -1,8 +1,6 @@
 package application;
 
-import java.io.Serializable;
-
-public class Statistiche implements Serializable {
+public class Statistiche {
     private String field;
 	private float avg;
     private Object min;
@@ -10,11 +8,7 @@ public class Statistiche implements Serializable {
     public double devstd;
     private int sum;
     private long count;
-   
- 
-	
-	//public Statistiche() {
-		//}
+
 	
 	public Statistiche(String field, float avg, Object min, Object max, double devstd, int sum, long count ) {
 		

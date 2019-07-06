@@ -1,8 +1,8 @@
 package application;
 
-import java.io.Serializable;
 
-public class Tumore implements Serializable {
+
+public class Tumore	{ 
     private String periodo;
     private String territorio;
     private String patologia;

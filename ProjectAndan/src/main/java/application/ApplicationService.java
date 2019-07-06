@@ -1,22 +1,8 @@
 package application;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Vector;
-
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-
-
-
-
-import java.util.List;
-
-import static java.lang.String.format;
 
 @Component
 public class ApplicationService {
@@ -26,11 +12,17 @@ public class ApplicationService {
 	private static Object obj = new Object();
 	
     static {
-		//Initialize Data
-    	JSON.Json();
-    	
-    	
-    	Metadata m1 = new Metadata("periodo", "PERIODO", "String");
+    	JSON.Json(); 	
+	}
+
+
+	public static Vector<Tumore> getList() {
+		//Serialization.parser();
+		tumori = Serialization.data();
+	    	return tumori;
+	}
+	public static Vector<Metadata> getMeta() {
+		Metadata m1 = new Metadata("periodo", "PERIODO", "String");
 		Metadata m2 = new Metadata("territorio", "TERRITORIO", "String");
 		Metadata m3 = new Metadata("patologia", "PATOLOGIA", "String");
 		Metadata m4 = new Metadata("maschi", "MASCHI", "Integer");
@@ -41,15 +33,6 @@ public class ApplicationService {
 		metadati.add(m3);
 		metadati.add(m4);
 		metadati.add(m5);
-	}
-
-
-	public static Vector<Tumore> getList() {
-		//Serialization.parser();
-		tumori = Serialization.data();
-	    	return tumori;
-	}
-	public static Vector<Metadata> getMeta() {
 	    	return metadati;
 	}
 	

@@ -1,8 +1,7 @@
 package application;
 
-import java.io.Serializable;
 
-public class Metadata implements Serializable {
+public class Metadata {
     private String alias;
     private String sourceField;
     private String type;
