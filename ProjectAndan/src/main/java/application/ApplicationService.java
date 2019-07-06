@@ -82,7 +82,7 @@ public class ApplicationService {
         return obj;
         }
 	
-	public static Vector<Tumore> dataFiltered(String field , String operator , int value) {
+	public static Vector<Tumore> dataFiltered(String field , String operator , Object value) {
 		
 		tumori = FilterUtils.selectData(field, operator, value) ;
 	    	return tumori;

@@ -36,9 +36,15 @@ public class ApplicationController {
         return ApplicationService.getList();
 	}
 	@RequestMapping(value = "/data/{field}/{operator}/{value}" , method=RequestMethod.GET)
-    public Vector<Tumore> filtriData(@PathVariable String field,@PathVariable String operator,@PathVariable int value) {
-        return ApplicationService.dataFiltered(field,operator,value);
+    public Object filtriData(@PathVariable String field,@PathVariable String operator,@PathVariable String value) {
+       
+		if (1<0) {
+		 int result= Integer.parseInt(value);
+		 return ApplicationService.dataFiltered(field,operator,result);
+	}else
+		return ApplicationService.dataFiltered(field,operator,value);
 	}
+		
 	
 	@GetMapping("/metadata")
     public Vector<Metadata> getM() {
@@ -55,7 +61,7 @@ public class ApplicationController {
 		}*/ 
 	
 	@RequestMapping(value= "/stats/{field}/{operator}/{value}", method=RequestMethod.GET)
-	public Object filtri(@PathVariable String field,@PathVariable String operator,@PathVariable int value ){
+	public Object filtri(@PathVariable String field,@PathVariable String operator,@PathVariable String value ){
 		  
 		//if (field=="maschi" ) {
 		//values= Integer.parseInt(value)	;
