@@ -38,11 +38,14 @@ public class ApplicationController {
 	@RequestMapping(value = "/data/{field}/{operator}/{value}" , method=RequestMethod.GET)
     public Object filtriData(@PathVariable String field,@PathVariable String operator,@PathVariable String value) {
        
-		if (1<0) {
+		if (field.equals("maschi") || field.equals("femmine")) {
 		 int result= Integer.parseInt(value);
 		 return ApplicationService.dataFiltered(field,operator,result);
-	}else
-		return ApplicationService.dataFiltered(field,operator,value);
+	}else if (field.equals("patologia") || field.equals("territorio") || field.equals("periodo")) {
+		return ApplicationService.dataFiltered(field,operator,value);}
+	else {objs=new HashMap(){{ put("type", "Campo inesistente"); put("result", "ERRORE");}};
+	return objs;}
+	
 	}
 		
 	
@@ -63,11 +66,18 @@ public class ApplicationController {
 	@RequestMapping(value= "/stats/{field}/{operator}/{value}", method=RequestMethod.GET)
 	public Object filtri(@PathVariable String field,@PathVariable String operator,@PathVariable String value ){
 		  
-		//if (field=="maschi" ) {
-		//values= Integer.parseInt(value)	;
+		if (field.equals("maschi") || field.equals("femmine")) {
+			 int result= Integer.parseInt(value);
+			 return ApplicationService.getStat(field,operator,result);
+		}else if (field.equals("patologia") || field.equals("territorio") || field.equals("periodo")) {
+			return ApplicationService.getStat(field,operator,value);}
+		else {objs=new HashMap(){{ put("type", "Campo inesistente"); put("result", "ERRORE");}};
+		return objs;}
 	
-		return ApplicationService.getStat(field,operator,value);
-		}
+		
+	
+	
+	}
 		
 	
 		
