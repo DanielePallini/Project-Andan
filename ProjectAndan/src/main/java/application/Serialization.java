@@ -1,20 +1,18 @@
 package application;
 import java.io.*;
 import java.util.*;
-//import com.google.gson.Gson;
-//import com.google.gson.GsonBuilder;
+
 public class Serialization {
-	final static String COMMA_DELIMITER = ",";
 
 	public Serialization() {
 		
 	}
 
-	public static void parser() {
+	/*public static void parser() {
 		Tumore t = new Tumore("2011-2011", "081001", "Tumori maligni", 162 , 167);
-   
+	}
 	
-		
+	
 		try {
 			FileOutputStream fileOut = new FileOutputStream("tumore.ser");
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
@@ -41,7 +39,7 @@ public class Serialization {
 			c.printStackTrace();
 		//	return;
 		}
-	}
+	}*/
 
 
 	public static Vector<Tumore> data(){
@@ -58,7 +56,6 @@ public class Serialization {
 			br.close();
 		} catch (IOException i) {
 			i.printStackTrace();
-	//		return;
 		}
 
 	   return v;	   

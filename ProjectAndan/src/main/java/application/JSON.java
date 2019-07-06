@@ -16,11 +16,9 @@ import org.json.simple.parser.ParseException;
 
 public class JSON {
 
-	public static void main(String[] args) {
+	public static void Json() {
         int i=0;
 		String url = "https://www.dati.gov.it/api/3/action/package_show?id=4754c863-f86f-47ae-b105-dc9963227c34";
-		if(args.length == 1)
-			url = args[0]; 
 		try {
 			
 			URLConnection openConnection = new URL(url).openConnection();
@@ -35,7 +33,7 @@ public class JSON {
 			  
 			   while ( ( line = buf.readLine() ) != null ) {
 				   data+= line;
-				   System.out.println( line );
+				   //System.out.println( line );
 			   }
 			 } finally {
 			   in.close();
@@ -48,20 +46,16 @@ public class JSON {
 			        JSONObject o1 = (JSONObject)o; 
 			        String format = (String)o1.get("format");
 			        String urlD = (String)o1.get("url");
-			        System.out.println(format + " | " + urlD);
+			        //System.out.println(format + " | " + urlD);
 			        if(format.equals("csv")) {
 			        	i++;
 			          if (i==1) {                                    // Per evitare la doppia creazione di t1.csv
 			     		     download(urlD, "t1.csv");
 			          }
-	     			    if(i==2) {
-			          
-    		         download(urlD, "t2.csv");
-			    }
 			    }
 			    
 			}
-			System.out.println( "OK" );
+			//System.out.println( "OK" );
 		} }
 			catch (IOException | ParseException e) {
 			e.printStackTrace();
