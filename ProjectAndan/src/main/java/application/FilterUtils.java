@@ -32,6 +32,12 @@ public class FilterUtils {
 				return false;		
 				}
 	
+	public static boolean checkAnd(Object value, Object th) {
+		if ((th instanceof Number && value instanceof Number) || (th instanceof String && value instanceof String)) {	
+			return (value.equals(th));}
+		return false;
+	}
+	
 	public static Vector<Integer> select(String fieldName, String operator, Object value) {
 		Vector<Integer> src= StatisticsInt.getVett(fieldName, "0", 0);
 		Vector<Integer> out = new Vector<Integer>();
@@ -125,4 +131,40 @@ public class FilterUtils {
 		}
 		return out;}
 	}
+	
+	public static Vector<Tumore> andData(String field1, Object valore1, String field2, Object valore2) {
+		Vector<Tumore> src= Serialization.data();
+		Vector<Tumore> out = new Vector<Tumore>();
+		 
+			for(Tumore item:src) {
+			try {
+				Method m = item.getClass().getMethod("get"+field1.substring(0, 1).toUpperCase()+field1.substring(1),null);
+				Method m1 = item.getClass().getMethod("get"+field2.substring(0, 1).toUpperCase()+field2.substring(1),null);
+				try {
+					Object tmp1 = m.invoke(item);
+					Object tmp2 = m1.invoke(item);
+					
+					if(FilterUtils.checkAnd(tmp1,valore1) && FilterUtils.checkAnd(tmp2,valore2) )
+						out.add(item);
+				} catch (IllegalAccessException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IllegalArgumentException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (InvocationTargetException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} catch (NoSuchMethodException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SecurityException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}					
+		}
+		return out;
+	} 
+	
 }

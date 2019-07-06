@@ -28,8 +28,7 @@ public class ApplicationController {
 	
 	private static Object objs = new Object();
 	
-	@Autowired
-    private ApplicationService applicationService;
+	
 	
 	@GetMapping("/data")
     public Vector<Tumore> getAll() {
@@ -48,7 +47,30 @@ public class ApplicationController {
 	
 	}
 		
+	@RequestMapping(value = "/data/{field1}/{value1}/{field2}/{value2}" , method=RequestMethod.GET)
+    public Object and(@PathVariable String field1,@PathVariable String value1,@PathVariable String field2 , @PathVariable String value2) {
+       int result1 = 0;
+       int result2 = 0;
+       Object valore1;
+       Object valore2;
+     
+	if (field1.equals ("maschi") || field1.equals("femmine")) {
+		 result1= Integer.parseInt(value1);}
+	if (field2.equals ("maschi") || field2.equals("femmine")) { 
+		 result2= Integer.parseInt(value2); }
 	
+		 if(result1 == 0) 
+		 { valore1 = value1;}
+		 else {valore1=result1;}
+		 
+		 if(result2 == 0) 
+		 {  valore2 = value2;
+		 }
+		 else {valore2=result2;
+		 }
+		 
+		 return ApplicationService.and(field1, valore1, field2, valore2);
+}
 	@GetMapping("/metadata")
     public Vector<Metadata> getM() {
         return ApplicationService.getMeta();

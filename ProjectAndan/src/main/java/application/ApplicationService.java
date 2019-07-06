@@ -87,7 +87,13 @@ public class ApplicationService {
 		tumori = FilterUtils.selectData(field, operator, value) ;
 	    	return tumori;
 	}
-	    	
+	   
+	public static Vector<Tumore> and(String field1,Object valore1,String field2,Object valore2) {
+		
+		tumori = FilterUtils.andData(field1, valore1, field2, valore2);
+		return tumori;
+		
+	}
 }
 	
 	
