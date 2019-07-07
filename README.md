@@ -51,10 +51,11 @@ Infine, di seguito il diagramma delle classi della nostra Application.
 
 N.B Per una migliore visualizzazione fare riferimento a https://ibb.co/7X02xfK
 
-Enjoy
+Enjoy!
+
 				Andrea Giuliani Daniele Pallini
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDczMjMyMDMsLTMzOTY4MTY0Myw3Nj
-AxMzQ3NDFdfQ==
+eyJoaXN0b3J5IjpbLTEwMjIxODQ4MiwtMzM5NjgxNjQzLDc2MD
+EzNDc0MV19
 -->
