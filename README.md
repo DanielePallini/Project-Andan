@@ -22,7 +22,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
  
 	Implementa il filtro AND. Restituisce i record del csv che rispettano *entrambi* i filtri stabiliti in fase di richiesta. "field1", "field2" sono i due campi richiesti, " value 1" è il valore che deve avere field 1," value 2" è il valore che deve avere "field 2".
  - [ ] */metadata*
-
+![enter image description here](https://lh3.googleusercontent.com/qaH90WDvi_wSC-SDNIkfGAWvj4asWLuUAJRgOTDATJbhF8fcbQ-W3Q7LtmMpqNtHFAg3easkZ4Q)
 	Restituisce i metadati del file csv, cioè alias, nome del campo e tipo per ciascuno dei 5 campi della classe Tumore.
 
  - [ ] */stats/{field}*
@@ -35,8 +35,8 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MjE3NjY5MCwxMTc1NDI4MzQyLC0xMj
-AwNDU1ODQwLC0xODcwMzc3MTM4LC0xMTMyNzI4MzI5LC0xMDY1
-OTQ2NjgzLDExMTgxNTk3MzUsMzYwMTE2ODc0LC00MTUwNDY1ND
-hdfQ==
+eyJoaXN0b3J5IjpbLTE1OTc2OTM2MDcsMTE3NTQyODM0MiwtMT
+IwMDQ1NTg0MCwtMTg3MDM3NzEzOCwtMTEzMjcyODMyOSwtMTA2
+NTk0NjY4MywxMTE4MTU5NzM1LDM2MDExNjg3NCwtNDE1MDQ2NT
+Q4XX0=
 -->
