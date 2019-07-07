@@ -7,7 +7,7 @@ Tramite chiamate di tipo GET accessibili con diverse querystring l'Applicazione 
 È possibile fare richiesta di 5 diversi campi: "periodo", "territorio", "patologia", "maschi", "femmine". I primi tre campi sono di tipo String, le operazioni di filtraggio svolte sono quelle del conteggio elementi unici e dell'operatore "not", che restituisce tutti i record del file csv che non sono uguali alla stringa passata.
 "maschi" e "femmine", invece, sono campi di tipo int. Di seguito le operazioni svolte per questi ultimi: media, massimo, minimo, deviazione standard, conteggio elementi unici, somma.
 Anche qui è presente la possibilità di inserire filtri in fase di richiesta: si può scrivere nella query string <, >, ==, not, and e dopo uno"/" il valore da confrontare per utilizzare quell'operatore come confronto.
-L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentesi graffe,dove presenti, stanno ad indicare che all'interno si devono inserire i valori che si desidera cercare:*
+L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentesi graffe, dove presenti, stanno ad indicare che all'interno si devono inserire i valori che si desidera cercare:*
 
  - [ ] */data*
 
@@ -15,7 +15,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 
  - [ ] /data/{field}/{operator}/{value}
 
-	Restituisce i record del csv che rispettano i filtri stabiliti in fase di richiesta. "field" è il campo, "operator" è l'operatore di confronto, value è il valore di confronto(può essere stringa o intero).
+	Restituisce i record del csv che rispettano i filtri stabiliti in fase di richiesta. "field" è il campo, "operator" è l'operatore di confronto, value è il valore di confronto(può essere stringa o intero). Se il campo è di tipo int("maschi" o "femmine") l'Applicazione restituisce le operazioni media, massimo, minimo, deviazione standard, conteggio elementi unici, somma. Se invece il campo inserito è di tipo String ("periodo", "territorio", patologia"), la restituzione sarà il conteggio degli elementi unici con relativa stampa.
 
  - [ ] */data/{field1}/{value1}/{field2}/{value2}*
  
@@ -34,7 +34,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4Nzg4ODkxLC0xMTMyNzI4MzI5LC0xMD
-Y1OTQ2NjgzLDExMTgxNTk3MzUsMzYwMTE2ODc0LC00MTUwNDY1
-NDhdfQ==
+eyJoaXN0b3J5IjpbODQ1NTM2MTUsLTExMzI3MjgzMjksLTEwNj
+U5NDY2ODMsMTExODE1OTczNSwzNjAxMTY4NzQsLTQxNTA0NjU0
+OF19
 -->
