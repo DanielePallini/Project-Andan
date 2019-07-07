@@ -38,18 +38,23 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 	 
 ![Diagramma delle sequenze delle statistiche filtrate](https://lh3.googleusercontent.com/skJWlP7Mj7VTUNPElX3uNHgsFL4EVnPSpW5vHA-M8ah375rdkqLOWrvyp9HKAoGYH3-lGpZ13j4)
+
 Questo è invece il diagramma dei casi d'uso:
+
 ![Diagramma dei casi d'uso](https://lh3.googleusercontent.com/28kv12EmyDrDQoTDR_LAwwO1insFgCI_sUO6WDN8-1mRvLpWHNTH7q5N6H7qEfC4ggKtx3w7UA4)
+
 N.B Per una migliore visualizzazione fare riferimento a https://ibb.co/Zhv6mYT
 
 Infine, di seguito il diagramma delle classi della nostra Application.
+
 ![Diagramma delle classi](https://lh3.googleusercontent.com/eReF19E9Lqit1WdcrFmUdfojR65SYKGne_t4657OC_DWHWEhKccke-7LDTRqnZ3Ei3Z06Tq7f1k)
+
 N.B Per una migliore visualizzazione fare riferimento a https://ibb.co/7X02xfK
 
 Enjoy
 				Andrea Giuliani Daniele Pallini
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMzI0NzUxMSwtMzM5NjgxNjQzLDc2MD
-EzNDc0MV19
+eyJoaXN0b3J5IjpbLTIxMDczMjMyMDMsLTMzOTY4MTY0Myw3Nj
+AxMzQ3NDFdfQ==
 -->
