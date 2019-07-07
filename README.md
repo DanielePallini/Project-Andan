@@ -33,9 +33,5 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NTIxNDk4OCwtMjAzODkxMTE2MSwyMD
-kxMjIzMzgyLC05NjY5ODE1MjUsMTE3NTQyODM0MiwtMTIwMDQ1
-NTg0MCwtMTg3MDM3NzEzOCwtMTEzMjcyODMyOSwtMTA2NTk0Nj
-Y4MywxMTE4MTU5NzM1LDM2MDExNjg3NCwtNDE1MDQ2NTQ4XX0=
-
+eyJoaXN0b3J5IjpbMTQ3NTIxNDk4OF19
 -->
