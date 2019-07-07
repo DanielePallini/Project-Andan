@@ -19,9 +19,10 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	Restituisce i record del csv che rispettano i filtri stabiliti in fase di richiesta. "field" è il campo, "operator" è l'operatore di confronto, value è il valore di confronto(può essere stringa o intero). Gli operatori disponibili sono "<, >, ==, not".
 ![Diagramma delle sequenze per i dati filtrati](https://lh3.googleusercontent.com/L5XeQQfGH43Egl111wak-B2C3wMcuvVQ006JiSBY1yiIW_mUTGSfDY5bjS6HFWWR1kXEs6f7WaY)
  - [ ] */data/{field1}/{value1}/{field2}/{value2}*
+ 
 	Implementa il filtro AND. Restituisce i record del csv che rispettano *entrambi* i filtri stabiliti in fase di richiesta. "field1", "field2" sono i due campi richiesti, " value 1" è il valore che deve avere field 1," value 2" è il valore che deve avere "field 2".
 	
-	![Diagramma delle sequenze per l'AND](https://lh3.googleusercontent.com/zHMo5dTsZ5iCSIFxR2qbh_emDeQ5FdU5DkfuoEVfOLr5agiNU_zwOibHADVEsEHpf-bSiDwCTn8)
+	Diagramma delle sequenze per l'AND
  - [ ] */metadata*
 	Restituisce i metadati del file csv, cioè alias, nome del campo e tipo per ciascuno dei 5 campi della classe Tumore.
 	
@@ -37,5 +38,5 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 ![Diagramma delle sequenze delle statistiche filtrate](https://lh3.googleusercontent.com/skJWlP7Mj7VTUNPElX3uNHgsFL4EVnPSpW5vHA-M8ah375rdkqLOWrvyp9HKAoGYH3-lGpZ13j4)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNDU5Mzg1M119
+eyJoaXN0b3J5IjpbLTEyNzA4NjM2MzEsMTAzNDU5Mzg1M119
 -->
