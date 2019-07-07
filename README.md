@@ -19,24 +19,21 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	Restituisce i record del csv che rispettano i filtri stabiliti in fase di richiesta. "field" è il campo, "operator" è l'operatore di confronto, value è il valore di confronto(può essere stringa o intero). Gli operatori disponibili sono "<, >, ==, not".
 ![Diagramma delle sequenze per i dati filtrati](https://lh3.googleusercontent.com/L5XeQQfGH43Egl111wak-B2C3wMcuvVQ006JiSBY1yiIW_mUTGSfDY5bjS6HFWWR1kXEs6f7WaY)
  - [ ] */data/{field1}/{value1}/{field2}/{value2}*
- ![Diagramma delle sequenze per l'AND](https://lh3.googleusercontent.com/Vhtw28bk93wCa45HQAyu1FNJGnsUOdbmrxmOv_D7poy9dU1YXy3aKfFuagDvC3LoaErO0IskK8o)
 	Implementa il filtro AND. Restituisce i record del csv che rispettano *entrambi* i filtri stabiliti in fase di richiesta. "field1", "field2" sono i due campi richiesti, " value 1" è il valore che deve avere field 1," value 2" è il valore che deve avere "field 2".
+	![Diagramma delle sequenze per l'AND](https://lh3.googleusercontent.com/Vhtw28bk93wCa45HQAyu1FNJGnsUOdbmrxmOv_D7poy9dU1YXy3aKfFuagDvC3LoaErO0IskK8o)
  - [ ] */metadata*
- 
-![Diagramma delle sequenze per i metadati](https://lh3.googleusercontent.com/qaH90WDvi_wSC-SDNIkfGAWvj4asWLuUAJRgOTDATJbhF8fcbQ-W3Q7LtmMpqNtHFAg3easkZ4Q)
 	Restituisce i metadati del file csv, cioè alias, nome del campo e tipo per ciascuno dei 5 campi della classe Tumore.
-
+![Diagramma delle sequenze per i metadati](https://lh3.googleusercontent.com/qaH90WDvi_wSC-SDNIkfGAWvj4asWLuUAJRgOTDATJbhF8fcbQ-W3Q7LtmMpqNtHFAg3easkZ4Q)
  - [ ] */stats/{field}*
- ![Diagramma delle sequenze per le stats](https://lh3.googleusercontent.com/iTH1ffpuuzOpkLerDhYFHEuIsEMkf-QzcdjNb_LWqovsKAuGOHSTMvAgbk-lngUg9BurQYQa_L4)
 	Restituisce le statistiche del campo specificato in "field". Se il campo è di tipo int("maschi" o "femmine") l'Applicazione restituisce le operazioni media, massimo, minimo, deviazione standard, conteggio elementi unici, somma. Se invece il campo inserito è di tipo String ("periodo", "territorio", patologia"), la restituzione sarà il conteggio degli elementi unici con relativa stampa.
 	
-
+![Diagramma delle sequenze per le stats](https://lh3.googleusercontent.com/iTH1ffpuuzOpkLerDhYFHEuIsEMkf-QzcdjNb_LWqovsKAuGOHSTMvAgbk-lngUg9BurQYQa_L4)
  - [ ] */stats/{field}/{operator}/{value}*
  ![Diagramma delle sequenze delle statistiche filtrate](https://lh3.googleusercontent.com/skJWlP7Mj7VTUNPElX3uNHgsFL4EVnPSpW5vHA-M8ah375rdkqLOWrvyp9HKAoGYH3-lGpZ13j4)
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMTI3MzE4NiwtMjAzODkxMTE2MSwyMD
+eyJoaXN0b3J5IjpbMTQ3NTIxNDk4OCwtMjAzODkxMTE2MSwyMD
 kxMjIzMzgyLC05NjY5ODE1MjUsMTE3NTQyODM0MiwtMTIwMDQ1
 NTg0MCwtMTg3MDM3NzEzOCwtMTEzMjcyODMyOSwtMTA2NTk0Nj
 Y4MywxMTE4MTU5NzM1LDM2MDExNjg3NCwtNDE1MDQ2NTQ4XX0=
