@@ -1,7 +1,7 @@
 
 		
 
-## strong text
+## Project Andan
 
 **
 Il progetto ha l'obiettivo di creare una API che, tramite chiamate di tipo GET, restituisca dati, metadati e statistiche riguardo i tumori riscontrati in Italia nell'anno 2011. Il link JSON di partenza è il seguente: "https://www.dati.gov.it/api/3/action/package_show?id=4754c863-f86f-47ae-b105-dc9963227c34".
@@ -37,5 +37,5 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; le parentesi
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzI3MTkzOTksLTQxNTA0NjU0OF19
+eyJoaXN0b3J5IjpbLTE5MDIzNTcwNTYsLTQxNTA0NjU0OF19
 -->
