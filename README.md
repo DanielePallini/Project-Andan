@@ -15,6 +15,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	![Diagramma delle sequenze per i dati](https://lh3.googleusercontent.com/YBWslfkIucUl1FZRx7acz94OLai9NMGuVpxLr9MJUVDp-DRa6zbDpl_0nezw23E3suz0D73WaLE)
 
  - [ ] /data/{field}/{operator}/{value}
+ 
 ![Diagramma delle sequenze per i dati filtrati](https://lh3.googleusercontent.com/L5XeQQfGH43Egl111wak-B2C3wMcuvVQ006JiSBY1yiIW_mUTGSfDY5bjS6HFWWR1kXEs6f7WaY)
 	Restituisce i record del csv che rispettano i filtri stabiliti in fase di richiesta. "field" è il campo, "operator" è l'operatore di confronto, value è il valore di confronto(può essere stringa o intero). Gli operatori disponibili sono "<, >, ==, not".
 
@@ -22,6 +23,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
  ![Diagramma delle sequenze per l'AND](https://lh3.googleusercontent.com/Vhtw28bk93wCa45HQAyu1FNJGnsUOdbmrxmOv_D7poy9dU1YXy3aKfFuagDvC3LoaErO0IskK8o)
 	Implementa il filtro AND. Restituisce i record del csv che rispettano *entrambi* i filtri stabiliti in fase di richiesta. "field1", "field2" sono i due campi richiesti, " value 1" è il valore che deve avere field 1," value 2" è il valore che deve avere "field 2".
  - [ ] */metadata*
+ 
 ![Diagramma delle sequenze per i metadati](https://lh3.googleusercontent.com/qaH90WDvi_wSC-SDNIkfGAWvj4asWLuUAJRgOTDATJbhF8fcbQ-W3Q7LtmMpqNtHFAg3easkZ4Q)
 	Restituisce i metadati del file csv, cioè alias, nome del campo e tipo per ciascuno dei 5 campi della classe Tumore.
 
@@ -35,7 +37,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQzNjIxODI0LC0yMDM4OTExMTYxLDIwOT
+eyJoaXN0b3J5IjpbNDE2OTQ1MzI4LC0yMDM4OTExMTYxLDIwOT
 EyMjMzODIsLTk2Njk4MTUyNSwxMTc1NDI4MzQyLC0xMjAwNDU1
 ODQwLC0xODcwMzc3MTM4LC0xMTMyNzI4MzI5LC0xMDY1OTQ2Nj
 gzLDExMTgxNTk3MzUsMzYwMTE2ODc0LC00MTUwNDY1NDhdfQ==
