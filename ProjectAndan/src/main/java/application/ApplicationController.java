@@ -7,6 +7,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import org.springframework.web.bind.annotation.RestController;
 
+import data.Metadata;
+import data.Tumore;
+/**
+ * Controller di Application. Sono presenti tutte le varie chiamate
+ * @author Andrea Giuliani Daniele Pallini
+ *
+ */
 @RestController
 public class ApplicationController {
 	
