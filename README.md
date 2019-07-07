@@ -12,7 +12,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
  - [ ] */data*
 
 	Restituisce tutti i record della classe Tumore ottenuti dal file csv.
-	
+	![enter image description here](https://lh3.googleusercontent.com/5OvbMCdU8lo1J1y9-zFy7duhFPvkPe_nt1sII4JAUv2hn_aDVBis8dD-ulu9lVSxO_3XT4SmwuI)
 
  - [ ] /data/{field}/{operator}/{value}
 
@@ -35,7 +35,8 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NTQyODM0MiwtMTIwMDQ1NTg0MCwtMT
-g3MDM3NzEzOCwtMTEzMjcyODMyOSwtMTA2NTk0NjY4MywxMTE4
-MTU5NzM1LDM2MDExNjg3NCwtNDE1MDQ2NTQ4XX0=
+eyJoaXN0b3J5IjpbMjE0MzUyNjY0NCwxMTc1NDI4MzQyLC0xMj
+AwNDU1ODQwLC0xODcwMzc3MTM4LC0xMTMyNzI4MzI5LC0xMDY1
+OTQ2NjgzLDExMTgxNTk3MzUsMzYwMTE2ODc0LC00MTUwNDY1ND
+hdfQ==
 -->
