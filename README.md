@@ -12,11 +12,13 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
  - [ ] */data*
 
 	Restituisce tutti i record della classe Tumore ottenuti dal file csv.
+	
 	![Diagramma delle sequenze per i dati](https://lh3.googleusercontent.com/YBWslfkIucUl1FZRx7acz94OLai9NMGuVpxLr9MJUVDp-DRa6zbDpl_0nezw23E3suz0D73WaLE)
 
  - [ ] /data/{field}/{operator}/{value}
  
 	Restituisce i record del csv che rispettano i filtri stabiliti in fase di richiesta. "field" è il campo, "operator" è l'operatore di confronto, value è il valore di confronto(può essere stringa o intero). Gli operatori disponibili sono "<, >, ==, not".
+	
 ![Diagramma delle sequenze per i dati filtrati](https://lh3.googleusercontent.com/L5XeQQfGH43Egl111wak-B2C3wMcuvVQ006JiSBY1yiIW_mUTGSfDY5bjS6HFWWR1kXEs6f7WaY)
  - [ ] */data/{field1}/{value1}/{field2}/{value2}*
  
@@ -38,5 +40,5 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 ![Diagramma delle sequenze delle statistiche filtrate](https://lh3.googleusercontent.com/skJWlP7Mj7VTUNPElX3uNHgsFL4EVnPSpW5vHA-M8ah375rdkqLOWrvyp9HKAoGYH3-lGpZ13j4)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYwMTM0NzQxXX0=
+eyJoaXN0b3J5IjpbLTMzOTY4MTY0Myw3NjAxMzQ3NDFdfQ==
 -->
