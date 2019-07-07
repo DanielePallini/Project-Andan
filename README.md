@@ -1,7 +1,7 @@
 
 		
 ## Project Andan
-Il progetto ha l'obiettivo di creare una API che, tramite chiamate di tipo GET, restituisca dati, metadati e statistiche riguardo i tumori riscontrati in Italia nell'anno 2011. Il link JSON di partenza è il seguente: "https://www.dati.gov.it/api/3/action/package_show?id=4754c863-f86f-47ae-b105-dc9963227c34".
+Il progetto ha l'obiettivo di creare una API che, tramite chiamate di tipo GET, restituisca dati, metadati e statistiche riguardo i tumori riscontrati in Italia nell'anno 2011. Il link contenente il JSON di partenza è il seguente: "https://www.dati.gov.it/api/3/action/package_show?id=4754c863-f86f-47ae-b105-dc9963227c34".
 L'Applicazione effettua il download del file csv dal link presente all'interno del JSON sopra e con quello effettua il parsing della classe Tumore.
 Tramite chiamate di tipo GET accessibili con diverse querystring l'Applicazione restituisce dati, metadati e statistiche dei diversi campi presenti nel file csv. C'è la possibilità in fase di richiesta di inserire filtri, in quel caso l'Applicazione restituisce solo gli oggetti della classe Tumore che rispettano le condizioni inserite dall'utente.
 È possibile fare richiesta di 5 diversi campi: "periodo", "territorio", "patologia", "maschi", "femmine". I primi tre campi sono di tipo String, le operazioni di filtraggio svolte sono quelle del conteggio elementi unici e dell'operatore "not", che restituisce tutti i record del file csv che non sono uguali alla stringa passata.
@@ -34,6 +34,6 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODE1OTczNSwzNjAxMTY4NzQsLTQxNT
-A0NjU0OF19
+eyJoaXN0b3J5IjpbLTEwNjU5NDY2ODMsMTExODE1OTczNSwzNj
+AxMTY4NzQsLTQxNTA0NjU0OF19
 -->
