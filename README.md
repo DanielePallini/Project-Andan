@@ -39,13 +39,13 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 
 ![Diagramma delle sequenze delle statistiche filtrate](https://lh3.googleusercontent.com/skJWlP7Mj7VTUNPElX3uNHgsFL4EVnPSpW5vHA-M8ah375rdkqLOWrvyp9HKAoGYH3-lGpZ13j4)
 Questo è invece il diagramma dei casi d'uso:
-
+![Diagramma dei casi d'uso](https://lh3.googleusercontent.com/28kv12EmyDrDQoTDR_LAwwO1insFgCI_sUO6WDN8-1mRvLpWHNTH7q5N6H7qEfC4ggKtx3w7UA4)N.B Per una migliore visualizzazione fare riferimento a
 Infine, di seguito il diagramma delle classi della nostra Application.
-![Diagramma delle classi](https://lh3.googleusercontent.com/jMRxRk8Zh-UbWxsGqcXzxYRp8rBKifi-473dybYDcJYsqG7trBqv7AVhOvNrUufDZgVKVnEbITA)N.B Per una migliore visuazzione fare riferimento a https://ibb.co/7X02xfK
+![Diagramma delle classi](https://lh3.googleusercontent.com/jMRxRk8Zh-UbWxsGqcXzxYRp8rBKifi-473dybYDcJYsqG7trBqv7AVhOvNrUufDZgVKVnEbITA)N.B Per una migliore visualizzazione fare riferimento a https://ibb.co/7X02xfK
 
 Enjoy
 				Andrea Giuliani Daniele Pallini
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzODk5MzQ2NSwtMzM5NjgxNjQzLDc2MD
-EzNDc0MV19
+eyJoaXN0b3J5IjpbLTE2MTgyMjkwOTAsLTMzOTY4MTY0Myw3Nj
+AxMzQ3NDFdfQ==
 -->
