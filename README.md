@@ -19,7 +19,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	Restituisce i record del csv che rispettano i filtri stabiliti in fase di richiesta. "field" è il campo, "operator" è l'operatore di confronto, value è il valore di confronto(può essere stringa o intero). Gli operatori disponibili sono "<, >, ==, not".
 
  - [ ] */data/{field1}/{value1}/{field2}/{value2}*
- 
+ ![enter image description here](https://lh3.googleusercontent.com/Vhtw28bk93wCa45HQAyu1FNJGnsUOdbmrxmOv_D7poy9dU1YXy3aKfFuagDvC3LoaErO0IskK8o)
 	Implementa il filtro AND. Restituisce i record del csv che rispettano *entrambi* i filtri stabiliti in fase di richiesta. "field1", "field2" sono i due campi richiesti, " value 1" è il valore che deve avere field 1," value 2" è il valore che deve avere "field 2".
  - [ ] */metadata*
 ![Diagramma delle sequenze per i metadati](https://lh3.googleusercontent.com/qaH90WDvi_wSC-SDNIkfGAWvj4asWLuUAJRgOTDATJbhF8fcbQ-W3Q7LtmMpqNtHFAg3easkZ4Q)
@@ -35,8 +35,9 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzg5MTExNjEsMjA5MTIyMzM4MiwtOT
-Y2OTgxNTI1LDExNzU0MjgzNDIsLTEyMDA0NTU4NDAsLTE4NzAz
-NzcxMzgsLTExMzI3MjgzMjksLTEwNjU5NDY2ODMsMTExODE1OT
-czNSwzNjAxMTY4NzQsLTQxNTA0NjU0OF19
+eyJoaXN0b3J5IjpbLTE4OTc1OTEzMTksLTIwMzg5MTExNjEsMj
+A5MTIyMzM4MiwtOTY2OTgxNTI1LDExNzU0MjgzNDIsLTEyMDA0
+NTU4NDAsLTE4NzAzNzcxMzgsLTExMzI3MjgzMjksLTEwNjU5ND
+Y2ODMsMTExODE1OTczNSwzNjAxMTY4NzQsLTQxNTA0NjU0OF19
+
 -->
