@@ -39,7 +39,7 @@ public class ApplicationController {
         return ApplicationService.getMeta();
 	}
    
-	@GetMapping("stats/{field}")
+	@GetMapping("/stats/{field}")
     public Object stats(@PathVariable String field) {
            return ApplicationService.getStat(field,"0",0)   ;  
 }
