@@ -29,9 +29,9 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	
 ![Diagramma delle sequenze per le stats](https://lh3.googleusercontent.com/iTH1ffpuuzOpkLerDhYFHEuIsEMkf-QzcdjNb_LWqovsKAuGOHSTMvAgbk-lngUg9BurQYQa_L4)
  - [ ] */stats/{field}/{operator}/{value}*
- ![Diagramma delle sequenze delle statistiche filtrate](https://lh3.googleusercontent.com/skJWlP7Mj7VTUNPElX3uNHgsFL4EVnPSpW5vHA-M8ah375rdkqLOWrvyp9HKAoGYH3-lGpZ13j4)
+ 
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
-
+![Diagramma delle sequenze delle statistiche filtrate](https://lh3.googleusercontent.com/skJWlP7Mj7VTUNPElX3uNHgsFL4EVnPSpW5vHA-M8ah375rdkqLOWrvyp9HKAoGYH3-lGpZ13j4)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NTIxNDk4OF19
+eyJoaXN0b3J5IjpbLTc4NDI0NzY4MiwxNDc1MjE0OTg4XX0=
 -->
