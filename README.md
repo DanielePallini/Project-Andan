@@ -12,7 +12,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
  - [ ] */data*
 
 	Restituisce tutti i record della classe Tumore ottenuti dal file csv.
-	![Diagramma delle sequenze per data](https://lh3.googleusercontent.com/YBWslfkIucUl1FZRx7acz94OLai9NMGuVpxLr9MJUVDp-DRa6zbDpl_0nezw23E3suz0D73WaLE)
+	![Diagramma delle sequenze per i dati](https://lh3.googleusercontent.com/YBWslfkIucUl1FZRx7acz94OLai9NMGuVpxLr9MJUVDp-DRa6zbDpl_0nezw23E3suz0D73WaLE)
 
  - [ ] /data/{field}/{operator}/{value}
 
@@ -35,8 +35,8 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk1MzM5MTE0LDExNzU0MjgzNDIsLTEyMD
-A0NTU4NDAsLTE4NzAzNzcxMzgsLTExMzI3MjgzMjksLTEwNjU5
-NDY2ODMsMTExODE1OTczNSwzNjAxMTY4NzQsLTQxNTA0NjU0OF
-19
+eyJoaXN0b3J5IjpbLTk2Njk4MTUyNSwxMTc1NDI4MzQyLC0xMj
+AwNDU1ODQwLC0xODcwMzc3MTM4LC0xMTMyNzI4MzI5LC0xMDY1
+OTQ2NjgzLDExMTgxNTk3MzUsMzYwMTE2ODc0LC00MTUwNDY1ND
+hdfQ==
 -->
