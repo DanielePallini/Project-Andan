@@ -15,7 +15,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	![Diagramma delle sequenze per i dati](https://lh3.googleusercontent.com/YBWslfkIucUl1FZRx7acz94OLai9NMGuVpxLr9MJUVDp-DRa6zbDpl_0nezw23E3suz0D73WaLE)
 
  - [ ] /data/{field}/{operator}/{value}
-![Diagramma delle sequenze per i dati filtra](https://lh3.googleusercontent.com/L5XeQQfGH43Egl111wak-B2C3wMcuvVQ006JiSBY1yiIW_mUTGSfDY5bjS6HFWWR1kXEs6f7WaY)
+![Diagramma delle sequenze per i dati filtrati](https://lh3.googleusercontent.com/L5XeQQfGH43Egl111wak-B2C3wMcuvVQ006JiSBY1yiIW_mUTGSfDY5bjS6HFWWR1kXEs6f7WaY)
 	Restituisce i record del csv che rispettano i filtri stabiliti in fase di richiesta. "field" è il campo, "operator" è l'operatore di confronto, value è il valore di confronto(può essere stringa o intero). Gli operatori disponibili sono "<, >, ==, not".
 
  - [ ] */data/{field1}/{value1}/{field2}/{value2}*
@@ -35,8 +35,8 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjI0NDU2NjMsLTk2Njk4MTUyNSwxMT
-c1NDI4MzQyLC0xMjAwNDU1ODQwLC0xODcwMzc3MTM4LC0xMTMy
-NzI4MzI5LC0xMDY1OTQ2NjgzLDExMTgxNTk3MzUsMzYwMTE2OD
-c0LC00MTUwNDY1NDhdfQ==
+eyJoaXN0b3J5IjpbMjA5MTIyMzM4MiwtOTY2OTgxNTI1LDExNz
+U0MjgzNDIsLTEyMDA0NTU4NDAsLTE4NzAzNzcxMzgsLTExMzI3
+MjgzMjksLTEwNjU5NDY2ODMsMTExODE1OTczNSwzNjAxMTY4Nz
+QsLTQxNTA0NjU0OF19
 -->
