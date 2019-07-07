@@ -40,7 +40,9 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 ![Diagramma delle sequenze delle statistiche filtrate](https://lh3.googleusercontent.com/skJWlP7Mj7VTUNPElX3uNHgsFL4EVnPSpW5vHA-M8ah375rdkqLOWrvyp9HKAoGYH3-lGpZ13j4)
 Infine, di seguito il diagramma delle classi della nostra Application.
 
+Enjoy
+				Andrea Giuliani Daniele Pallini
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjI5ODEyMSwtMzM5NjgxNjQzLDc2MD
-EzNDc0MV19
+eyJoaXN0b3J5IjpbLTEyMTQzMzgzNDgsLTMzOTY4MTY0Myw3Nj
+AxMzQ3NDFdfQ==
 -->
