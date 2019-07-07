@@ -38,7 +38,9 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 	 
 ![Diagramma delle sequenze delle statistiche filtrate](https://lh3.googleusercontent.com/skJWlP7Mj7VTUNPElX3uNHgsFL4EVnPSpW5vHA-M8ah375rdkqLOWrvyp9HKAoGYH3-lGpZ13j4)
+Infine, di seguito il diagramma delle classi della nostra Application.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTY4MTY0Myw3NjAxMzQ3NDFdfQ==
+eyJoaXN0b3J5IjpbLTYyMjI5ODEyMSwtMzM5NjgxNjQzLDc2MD
+EzNDc0MV19
 -->
