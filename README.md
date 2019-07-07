@@ -26,7 +26,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	Restituisce i metadati del file csv, cioè alias, nome del campo e tipo per ciascuno dei 5 campi della classe Tumore.
 
  - [ ] */stats/{field}*
- ![enter image description here](https://lh3.googleusercontent.com/iTH1ffpuuzOpkLerDhYFHEuIsEMkf-QzcdjNb_LWqovsKAuGOHSTMvAgbk-lngUg9BurQYQa_L4)
+ ![Diagramma delle sequenze per le stats](https://lh3.googleusercontent.com/iTH1ffpuuzOpkLerDhYFHEuIsEMkf-QzcdjNb_LWqovsKAuGOHSTMvAgbk-lngUg9BurQYQa_L4)
 	Restituisce le statistiche del campo specificato in "field". Se il campo è di tipo int("maschi" o "femmine") l'Applicazione restituisce le operazioni media, massimo, minimo, deviazione standard, conteggio elementi unici, somma. Se invece il campo inserito è di tipo String ("periodo", "territorio", patologia"), la restituzione sarà il conteggio degli elementi unici con relativa stampa.
 	
 
@@ -35,7 +35,7 @@ L'utente ha la possibilità di effettuare le seguenti chiamate GET; *le parentes
 	 Restituisce le statistiche del campo specifcato in "field" filtrato con l'operatore "operator" e con il valore "value". Se il campo è di tipo int, le operazioni disponibili sono <, >, ==, not; se il campo è di tipo String, indipendentemente da "operator", restituisce il numero di volte che il valore "value" è presente nel file csv.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODA1MzgyMzMsMTE3NTQyODM0MiwtMT
+eyJoaXN0b3J5IjpbLTE5NjI1NDM4MTYsMTE3NTQyODM0MiwtMT
 IwMDQ1NTg0MCwtMTg3MDM3NzEzOCwtMTEzMjcyODMyOSwtMTA2
 NTk0NjY4MywxMTE4MTU5NzM1LDM2MDExNjg3NCwtNDE1MDQ2NT
 Q4XX0=
