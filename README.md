@@ -43,12 +43,13 @@ Questo è invece il diagramma dei casi d'uso:
 N.B Per una migliore visualizzazione fare riferimento a https://ibb.co/Zhv6mYT
 
 Infine, di seguito il diagramma delle classi della nostra Application.
-![Diagramma delle classi](https://lh3.googleusercontent.com/jMRxRk8Zh-UbWxsGqcXzxYRp8rBKifi-473dybYDcJYsqG7trBqv7AVhOvNrUufDZgVKVnEbITA)
+![Diagramma delle classi](https://lh3.googleusercontent.com/eReF19E9Lqit1WdcrFmUdfojR65SYKGne_t4657OC_DWHWEhKccke-7LDTRqnZ3Ei3Z06Tq7f1k)
 N.B Per una migliore visualizzazione fare riferimento a https://ibb.co/7X02xfK
 
 Enjoy
 				Andrea Giuliani Daniele Pallini
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NDQ2ODAyOSwtMzM5NjgxNjQzLDc2MD
+eyJoaXN0b3J5IjpbMTExMzI0NzUxMSwtMzM5NjgxNjQzLDc2MD
 EzNDc0MV19
 -->
